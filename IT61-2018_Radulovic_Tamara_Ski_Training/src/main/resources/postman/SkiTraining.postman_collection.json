@@ -1,0 +1,1282 @@
+{
+	"info": {
+		"_postman_id": "bdfd9e54-2d97-48be-8868-3e1033d8d723",
+		"name": "SkiTraining",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Clan",
+			"item": [
+				{
+					"name": "ClanGetById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/clan/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"clan",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ClanGetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/clan",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"clan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ClanPost",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"id\": 9,\r\n        \"datumRodjenja\": \"1996-04-26\",\r\n        \"datumUclanjenja\": \"2022-02-01\",\r\n        \"imeClana\": \"Julija\",\r\n        \"korisnickoIme\": \"julijamitov\",\r\n        \"lozinka\": \"julijammm\",\r\n        \"prezimeClana\": \"Mitov\",\r\n        \"telefon\": \"060/2444516\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/clan",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"clan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ClanPut",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"id\": -41,\r\n        \"datumRodjenja\": \"1996-04-26\",\r\n        \"datumUclanjenja\": \"2022-02-01\",\r\n        \"imeClana\": \"Julija\",\r\n        \"korisnickoIme\": \"julijamitov\",\r\n        \"lozinka\": \"julijammm\",\r\n        \"prezimeClana\": \"Mitovvvvvv\",\r\n        \"telefon\": \"060/2444516\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/clan",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"clan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ClanDelete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/clan/-41",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"clan",
+								"-41"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ClanGetByIme",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/clanIme/Marijana",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"clanIme",
+								"Marijana"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ClanGetByPrezime",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/clanPrezime/todorov",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"clanPrezime",
+								"todorov"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Zaposleni",
+			"item": [
+				{
+					"name": "ZaposleniGetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/zaposleni",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"zaposleni"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ZaposleniGetById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/zaposleni/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"zaposleni",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ZaposleniPost",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 9,\r\n    \"adresa\": \"Timocke divizije 6/54\",\r\n    \"datumRodjenja\": \"1994-01-26\",\r\n    \"datumZaposlenja\": \"2017-01-18\",\r\n    \"imeZaposlenog\": \"Aleksandar\",\r\n    \"korisnickoIme\": \"aleksandarstankovic\",\r\n    \"lozinka\": \"aleksandar123\",\r\n    \"prezimeZaposlenog\": \"Stankovic\",\r\n    \"strucnaSprema\": \"Osnovne akademske studije\",\r\n    \"telefon\": \"063/4528845\",\r\n    \"hibernateLazyInitializer\": {}\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/zaposleni",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"zaposleni"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": -42,\r\n    \"adresa\": \"Timocke divizije 6/54\",\r\n    \"datumRodjenja\": \"1994-01-26\",\r\n    \"datumZaposlenja\": \"2017-01-18\",\r\n    \"imeZaposlenog\": \"Aleksandar\",\r\n    \"korisnickoIme\": \"aleksandarstankovic\",\r\n    \"lozinka\": \"aleksandar123\",\r\n    \"prezimeZaposlenog\": \"Stankoviccccc\",\r\n    \"strucnaSprema\": \"Osnovne akademske studije\",\r\n    \"telefon\": \"063/4528845\",\r\n    \"hibernateLazyInitializer\": {}\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/zaposleni",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"zaposleni"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ZaposleniDelete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/zaposleni/-42",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"zaposleni",
+								"-42"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ZaposleniGetByIme",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/zaposleniIme/Dusan",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"zaposleniIme",
+								"Dusan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ZaposleniGetByPrezime",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/zaposleniPrezime/Milojkovic",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"zaposleniPrezime",
+								"Milojkovic"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Proizvodjac",
+			"item": [
+				{
+					"name": "ProizvodjacGetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/proizvodjac",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"proizvodjac"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ProizvodjacGetById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/proizvodjac/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"proizvodjac",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ProizvodjacPost",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 8,\r\n    \"adresa\": \"Göllstrasse 24\",\r\n    \"nazivProizvodjaca\": \"Atomic\",\r\n    \"telefon\": \"066/4254618\",\r\n    \"hibernateLazyInitializer\": {}\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/proizvodjac",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"proizvodjac"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ProizvodjacPut",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": -42,\r\n    \"adresa\": \"Göllstrasse 24\",\r\n    \"nazivProizvodjaca\": \"Atomicccc\",\r\n    \"telefon\": \"066/4254618\",\r\n    \"hibernateLazyInitializer\": {}\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/proizvodjac",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"proizvodjac"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ProizvodjacDelete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/proizvodjac/-42",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"proizvodjac",
+								"-42"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ProizvodjacGetByNaziv",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/proizvodjacNaziv/Fischer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"proizvodjacNaziv",
+								"Fischer"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "TipOpreme",
+			"item": [
+				{
+					"name": "TipOpremeGetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/tipopreme",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"tipopreme"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TipOpremeGetById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/tipopreme/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"tipopreme",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TipOpremeByNaziv",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/tipopremeNaziv/skije",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"tipopremeNaziv",
+								"skije"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TipOpremePost",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 8,\r\n    \"nazivTipa\": \"naocare\",\r\n    \"opisTipa\": \"\",\r\n    \"hibernateLazyInitializer\": {}\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/tipopreme",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"tipopreme"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TipOpremePut",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": -42,\r\n    \"nazivTipa\": \"naocareeee\",\r\n    \"opisTipa\": \"\",\r\n    \"hibernateLazyInitializer\": {}\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/tipopreme",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"tipopreme"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/tipopreme/-42",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"tipopreme",
+								"-42"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Kartica",
+			"item": [
+				{
+					"name": "KarticaGetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/kartica",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"kartica"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "KarticaGetById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/kartica/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"kartica",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "KarticaPost",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 9,\r\n    \"brojRacuna\": \"270-4568789523546-56\",\r\n    \"ccv\": \"445\",\r\n    \"vaziDo\": \"2023-05-14\",\r\n    \"clan\": {\r\n        \"id\": 3,\r\n        \"datumRodjenja\": \"1989-08-21\",\r\n        \"datumUclanjenja\": \"2021-04-01\",\r\n        \"imeClana\": \"Marko\",\r\n        \"korisnickoIme\": \"markotodorov\",\r\n        \"lozinka\": \"markot\",\r\n        \"prezimeClana\": \"Todorov\",\r\n        \"telefon\": \"065/3456215\"\r\n    },\r\n    \"hibernateLazyInitializer\": {}\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/kartica",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"kartica"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "KarticaPut",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": -41,\r\n    \"brojRacuna\": \"270-4568789523546-56\",\r\n    \"ccv\": \"445\",\r\n    \"vaziDo\": \"2023-05-14\",\r\n    \"clan\": {\r\n        \"id\": 4,\r\n        \"datumRodjenja\": \"1989-08-21\",\r\n        \"datumUclanjenja\": \"2021-04-01\",\r\n        \"imeClana\": \"Marko\",\r\n        \"korisnickoIme\": \"markotodorov\",\r\n        \"lozinka\": \"markot\",\r\n        \"prezimeClana\": \"Todorovvvv\",\r\n        \"telefon\": \"065/3456215\"\r\n    },\r\n    \"hibernateLazyInitializer\": {}\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/kartica",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"kartica"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "KarticaDelete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/kartica/-41",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"kartica",
+								"-41"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "KarticaGetByClan",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/karticaZaClanaId/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"karticaZaClanaId",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Racun",
+			"item": [
+				{
+					"name": "RacunGetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/racun",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"racun"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RacunGetById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/racun/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"racun",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RacunGetByClan",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/racunZaClanaId/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"racunZaClanaId",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RacunPost",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 6,\r\n    \"datumPlacanja\": \"2022-02-02\",\r\n    \"iznos\": 19999.00,\r\n    \"clan\": {\r\n        \"id\": 1,\r\n        \"datumRodjenja\": \"2000-11-11\",\r\n        \"datumUclanjenja\": \"2021-11-21\",\r\n        \"imeClana\": \"Marijana\",\r\n        \"korisnickoIme\": \"marijanakitic\",\r\n        \"lozinka\": \"marijanak\",\r\n        \"prezimeClana\": \"Kitic\",\r\n        \"telefon\": \"063/1254866\"\r\n    },\r\n    \"hibernateLazyInitializer\": {}\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/racun",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"racun"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RacunPut",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": -42,\r\n    \"datumPlacanja\": \"2022-02-02\",\r\n    \"iznos\": 11000.00,\r\n    \"clan\": {\r\n        \"id\": 3,\r\n        \"datumRodjenja\": \"2000-11-11\",\r\n        \"datumUclanjenja\": \"2021-11-21\",\r\n        \"imeClana\": \"Marijana\",\r\n        \"korisnickoIme\": \"marijanakitic\",\r\n        \"lozinka\": \"marijanak\",\r\n        \"prezimeClana\": \"Kitic\",\r\n        \"telefon\": \"063/1254866\"\r\n    },\r\n    \"hibernateLazyInitializer\": {}\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/racun",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"racun"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/racun/-42",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"racun",
+								"-42"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Oprema",
+			"item": [
+				{
+					"name": "OpremaGetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/oprema",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"oprema"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "OpremaGetById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/oprema/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"oprema",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "OpremaGetByTip",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/opremaPoTipuId/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"opremaPoTipuId",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "OpremaGetByProizvodjac",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/opremaPoProizvodjacuId/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"opremaPoProizvodjacuId",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "OpremaGetByNaziv",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/opremaNaziv/skije",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"opremaNaziv",
+								"skije"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "OpremaPost",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 8,\r\n    \"cenaIznajmljivanja\": 1800.00,\r\n    \"garancija\": \"2023-01-28\",\r\n    \"kolicinaNaStanju\": 3,\r\n    \"nazivOpreme\": \"naocare ski scott\",\r\n    \"opisOpreme\": \"NAOČARE SKI SCOTT LCG EVO LS YELLOW-LIGHT SENSITIVE BLUE CHROME\",\r\n    \"velicina\": \"univerzalna\",\r\n    \"clans\": [\r\n        {\r\n            \"id\": 3,\r\n            \"datumRodjenja\": \"2000-11-11\",\r\n            \"datumUclanjenja\": \"2021-11-21\",\r\n            \"imeClana\": \"Marijana\",\r\n            \"korisnickoIme\": \"marijanakitic\",\r\n            \"lozinka\": \"marijanak\",\r\n            \"prezimeClana\": \"Kitic\",\r\n            \"telefon\": \"063/1254866\"\r\n        }\r\n    ],\r\n    \"proizvodjac\": {\r\n        \"id\": 3,\r\n        \"adresa\": \"413 Pine Street 3rd Floor, Seattle, WA, 98101\",\r\n        \"nazivProizvodjaca\": \"Madshus\",\r\n        \"telefon\": \"065/4231145\"\r\n    },\r\n    \"tipopreme\": {\r\n        \"id\": 3,\r\n        \"nazivTipa\": \"naocare\",\r\n        \"opisTipa\": \"\"\r\n    },\r\n    \"hibernateLazyInitializer\": {}\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/oprema",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"oprema"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": -41,\r\n    \"cenaIznajmljivanja\": 1200.00,\r\n    \"garancija\": \"2023-01-28\",\r\n    \"kolicinaNaStanju\": 3,\r\n    \"nazivOpreme\": \"naocare ski scott\",\r\n    \"opisOpreme\": \"NAOČARE SKI SCOTT LCG EVO LS YELLOW-LIGHT SENSITIVE BLUE CHROME\",\r\n    \"velicina\": \"univerzalna\",\r\n    \"clans\": [\r\n        {\r\n            \"id\": 3,\r\n            \"datumRodjenja\": \"2000-11-11\",\r\n            \"datumUclanjenja\": \"2021-11-21\",\r\n            \"imeClana\": \"Marijana\",\r\n            \"korisnickoIme\": \"marijanakitic\",\r\n            \"lozinka\": \"marijanak\",\r\n            \"prezimeClana\": \"Kitic\",\r\n            \"telefon\": \"063/1254866\"\r\n        }\r\n    ],\r\n    \"proizvodjac\": {\r\n        \"id\": 3,\r\n        \"adresa\": \"413 Pine Street 3rd Floor, Seattle, WA, 98101\",\r\n        \"nazivProizvodjaca\": \"Madshus\",\r\n        \"telefon\": \"065/4231145\"\r\n    },\r\n    \"tipopreme\": {\r\n        \"id\": 1,\r\n        \"nazivTipa\": \"naocare\",\r\n        \"opisTipa\": \"\"\r\n    },\r\n    \"hibernateLazyInitializer\": {}\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/oprema",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"oprema"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/oprema/-41",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"oprema",
+								"-41"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Obuka",
+			"item": [
+				{
+					"name": "ObukaGetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/obuka",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"obuka"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ObukaGetById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/obuka/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"obuka",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ObukaByZaposleni",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/obukaPoZaposlenomId/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"obukaPoZaposlenomId",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ObukaPost",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 7,\r\n    \"brojCasova\": 19,\r\n    \"brojClanova\": 19,\r\n    \"datumPocetka\": \"2022-11-28\",\r\n    \"datumZavrsetka\": \"2022-12-16\",\r\n    \"trajanje\": \"1h\",\r\n    \"clans\": [],\r\n    \"zaposleni\": {\r\n        \"id\": 5,\r\n        \"adresa\": \"Timocke divizije 6/54\",\r\n        \"datumRodjenja\": \"1994-01-26\",\r\n        \"datumZaposlenja\": \"2017-01-18\",\r\n        \"imeZaposlenog\": \"Aleksandar\",\r\n        \"korisnickoIme\": \"aleksandarstankovic\",\r\n        \"lozinka\": \"aleksandar123\",\r\n        \"prezimeZaposlenog\": \"Stankovic\",\r\n        \"strucnaSprema\": \"Osnovne akademske studije\",\r\n        \"telefon\": \"063/4528845\"\r\n    },\r\n    \"hibernateLazyInitializer\": {}\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/obuka",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"obuka"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": -42,\r\n    \"brojCasova\": 19,\r\n    \"brojClanova\": 19,\r\n    \"datumPocetka\": \"2022-11-28\",\r\n    \"datumZavrsetka\": \"2022-12-16\",\r\n    \"trajanje\": \"1h\",\r\n    \"clans\": [],\r\n    \"zaposleni\": {\r\n        \"id\": 2,\r\n        \"adresa\": \"Timocke divizije 6/54\",\r\n        \"datumRodjenja\": \"1994-01-26\",\r\n        \"datumZaposlenja\": \"2017-01-18\",\r\n        \"imeZaposlenog\": \"Aleksandar\",\r\n        \"korisnickoIme\": \"aleksandarstankovic\",\r\n        \"lozinka\": \"aleksandar123\",\r\n        \"prezimeZaposlenog\": \"Stankovic\",\r\n        \"strucnaSprema\": \"Osnovne akademske studije\",\r\n        \"telefon\": \"063/4528845\"\r\n    },\r\n    \"hibernateLazyInitializer\": {}\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/obuka",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"obuka"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/obuka/-42",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"obuka",
+								"-42"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Instruktor",
+			"item": [
+				{
+					"name": "InstruktorGetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/instruktor",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"instruktor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "InstruktorGetById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/instruktor/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"instruktor",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "InstruktorDelete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"zaposleni\": 8,\r\n    \"licenca\": \"IVSIi\",\r\n    \"zvanje\": \"Instruktor skijanja II stepana\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/instruktor/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"instruktor",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
